@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
         provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
             const firstLine = document.lineAt(0);
             if (firstLine.text !== '42') {
-                return [vscode.TextEdit.insert(firstLine.range.start, '42\n')];
+                return [vscode.TextEdit.insert(firstLine.range.start, '42.7\n')];
             }
         }
     });
